@@ -56,7 +56,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'fitpoint),
+            'database' => env('DB_DATABASE', 'fitpoint'),
             'username' => env('DB_USERNAME', 'fpointsql'),
             'password' => env('DB_PASSWORD', 'zYSMNWHZbZZgR38H56'),
             'charset' => 'utf8',
