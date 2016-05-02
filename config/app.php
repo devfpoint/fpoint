@@ -145,7 +145,7 @@ return [
         App\Providers\BackendServiceProvider::class,
 
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
-        Illuminate\Html\HtmlServiceProvider::class,
+        
 
     ],
 
@@ -196,8 +196,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
 
         'Sentinel'  => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
-        'Form'=> Illuminate\Html\FormFacade::class,
-        'HTML'=> Illuminate\Html\HtmlFacade::class,
+       
 
     ],
 
