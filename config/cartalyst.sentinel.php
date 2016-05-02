@@ -11,7 +11,7 @@
  * bundled with this package in the LICENSE file.
  *
  * @package    Sentinel
- * @version    2.0.11
+ * @version    2.0.4
  * @author     Cartalyst LLC
  * @license    BSD License (3-clause)
  * @copyright  (c) 2011-2015, Cartalyst LLC
@@ -53,7 +53,8 @@ return [
 
     'users' => [
 
-        'model' => 'Cartalyst\Sentinel\Users\EloquentUser',
+        'model' => 'App\User',
+        // 'model' => 'Cartalyst\Sentinel\Users\EloquentUser',
 
     ],
 
@@ -245,7 +246,7 @@ return [
 
         'ip' => [
 
-            'interval' => 900,
+            'interval' => 90,
 
             'thresholds' => 5,
 
@@ -253,7 +254,7 @@ return [
 
         'user' => [
 
-            'interval' => 900,
+            'interval' => 90,
 
             'thresholds' => 5,
 
