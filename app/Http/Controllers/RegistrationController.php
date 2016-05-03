@@ -54,7 +54,7 @@ class RegistrationController extends Controller
 
         return redirect('login')->withFlashMessage('User Successfully Created!');
     }
-    else
+    else{
         // Find the role using the role name
         $usersRole = Sentinel::findRoleByName('Admin');
 
@@ -62,5 +62,6 @@ class RegistrationController extends Controller
         $usersRole->users()->attach($user);
 
         return redirect('login')->withFlashMessage('User Successfully Created!');
+        }
     }
 }
