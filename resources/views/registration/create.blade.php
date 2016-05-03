@@ -55,7 +55,7 @@
                             <!-- Radio field -->
                             <div class="form-group">
                                 {!! Form::radio('account_type', Client, true, ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
-                                {!! Form::radio('account_type', Coach, ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
+                                
                                 {!! errors_for('account_type', $errors) !!}
                             </div>
 
