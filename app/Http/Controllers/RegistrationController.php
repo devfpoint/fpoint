@@ -52,7 +52,7 @@ class RegistrationController extends Controller
         // Assign the role to the users
         $usersRole->users()->attach($user);
 
-        return redirect('login')->withFlashMessage('User Successfully Created!');
+        return redirect('login')->withFlashMessage('User Successfully Created!visa');
     }
     else{
         // Find the role using the role name
@@ -61,7 +61,7 @@ class RegistrationController extends Controller
         // Assign the role to the users
         $usersRole->users()->attach($user);
 
-        return redirect('login')->withFlashMessage('User Successfully Created!');
+        return redirect('login')->withFlashMessage('User Successfully Created!master');
         }
     }
 }
