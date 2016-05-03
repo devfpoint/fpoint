@@ -55,9 +55,9 @@
                             <!-- Radio field -->
                            <div class="cc-selector">
                            <input id="visa" type="radio" name="first_name" value="visa" />
-                           <label class="drinkcard-cc visa" for="visa"></label>
+                           <label class="drinkcard-cc visa" for="visa"></label> Visa
                            <input id="mastercard" type="radio" name="first_name" value="mastercard" />
-                           <label class="drinkcard-cc mastercard"for="mastercard"></label>
+                           <label class="drinkcard-cc mastercard"for="mastercard"></label> Master
                             </div>
    
 
