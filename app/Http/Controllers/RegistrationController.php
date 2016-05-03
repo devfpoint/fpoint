@@ -40,10 +40,10 @@ class RegistrationController extends Controller
     public function store(RegistrationFormRequest $request)
     {
         $input = $request->only('email', 'password', 'first_name', 'last_name');
-        $rolerequest = $request->only('first_name');
+          $roley = $request->input('first_name');
         $user = Sentinel::registerAndActivate($input);
 
-        if ($rolerequest == 'visa') {
+        if ($roley == 'visa') {
 
 
         // Find the role using the role name
