@@ -57,8 +57,9 @@
                             <div class="cc-selector">
                             {!! Form::radio('visa', 'client', 'visa')!!}
                             <label class="drinkcard-cc visa" for="visa"></label>
-                                
-                                {!! Form::radio('account_type', 'coach', ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
+                             {!! Form::radio('mastercard', 'coach', 'mastercard')!!}
+                            <label class="drinkcard-cc mastercard" for="mastercard"></label>   
+                               
                                 
                                 {!! errors_for('account_type', $errors) !!}
                             </div>
