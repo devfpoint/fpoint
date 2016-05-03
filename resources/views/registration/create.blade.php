@@ -53,16 +53,14 @@
                             </div>
 
                             <!-- Radio field -->
-                            {!! Form::label('account_type', 'Account Type'); !!}
-                            <div class="cc-selector">
-                            {!! Form::radio('visa', 'client', 'visa')!!}
-                            <label class="drinkcard-cc visa" for="visa"></label>
-                             {!! Form::radio('mastercard', 'coach', 'mastercard')!!}
-                            <label class="drinkcard-cc mastercard" for="mastercard"></label>   
-                               
-                                
-                                {!! errors_for('account_type', $errors) !!}
+                           <div class="cc-selector">
+                           <input id="visa" type="radio" name="credit-card" value="visa" />
+                           <label class="drinkcard-cc visa" for="visa"></label>
+                           <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+                           <label class="drinkcard-cc mastercard"for="mastercard"></label>
                             </div>
+   
+
 
                             <!-- Submit field -->
                             <div class="form-group">
