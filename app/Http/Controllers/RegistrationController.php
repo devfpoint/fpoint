@@ -43,7 +43,7 @@ class RegistrationController extends Controller
         $rolerequest = $request->only('first_name');
         $user = Sentinel::registerAndActivate($input);
 
-        if ($rolerequest = 'visa') {
+        if ($rolerequest == 'visa') {
 
 
         // Find the role using the role name
