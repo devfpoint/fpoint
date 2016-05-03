@@ -52,6 +52,13 @@
                                 {!! errors_for('last_name', $errors) !!}
                             </div>
 
+                            <!-- Radio field -->
+                            <div class="form-group">
+                                {!! Form::radio('account_type', Client, true, ['placeholder' => 'Account Type', 'class' => 'form-control')!!}
+                                {!! Form::radio('account_type', Coach, ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
+                                {!! errors_for('account_type', $errors) !!}
+                            </div>
+
                             <!-- Submit field -->
                             <div class="form-group">
                                 {!! Form::submit('Create Account', ['class' => 'btn btn-lg btn-primary btn-block']) !!}
