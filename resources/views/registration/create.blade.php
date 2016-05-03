@@ -54,9 +54,9 @@
 
                             <!-- Radio field -->
                             {!! Form::label('account_type', 'Account Type'); !!}
-                            <div class="form-group">
+                            <div class="cc-selector">
                             <label class="drinkcard-cc visa" for="visa"></label>
-                                {!! Form::radio('account_type', 'client', 'true', ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
+                                {!! Form::radio('visa', 'client', ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
                                 {!! Form::radio('account_type', 'coach', ['placeholder' => 'Account Type', 'class' => 'form-control'])!!}
                                 
                                 {!! errors_for('account_type', $errors) !!}
