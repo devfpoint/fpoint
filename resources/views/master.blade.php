@@ -19,8 +19,8 @@
        -moz-appearance:none;
             appearance:none;
 }
-.visa{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
-.mastercard{background-image:url(http://i.imgur.com/SJbRQF7.png);}
+.visa{background-image:url(http://www.uga-group.com/coach.jpg);}
+.mastercard{background-image:url(http://www.uga-group.com/client.jpg);}
 
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
@@ -33,7 +33,7 @@
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:100px;height:70px;
+    width:116px;height:99px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
