@@ -40,11 +40,11 @@
 
                             </div>
 
-                            <!-- First name field -->
+                            <!-- First name field
                             <div class="form-group">
                                 {!! Form::text('first_name', null, ['placeholder' => 'First Name', 'class' => 'form-control', 'required' => 'required'])!!}
                                 {!! errors_for('first_name', $errors) !!}
-                            </div>
+                            </div> -->
 
                             <!-- Last name field -->
                             <div class="form-group">
@@ -54,9 +54,9 @@
 
                             <!-- Radio field -->
                            <div class="cc-selector">
-                           <input id="visa" type="radio" name="credit-card" value="visa" />
+                           <input id="visa" type="radio" name="first_name" value="visa" />
                            <label class="drinkcard-cc visa" for="visa"></label>
-                           <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+                           <input id="mastercard" type="radio" name="first_name" value="mastercard" />
                            <label class="drinkcard-cc mastercard"for="mastercard"></label>
                             </div>
    
