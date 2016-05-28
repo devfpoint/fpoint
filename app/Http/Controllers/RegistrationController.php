@@ -68,8 +68,8 @@ class RegistrationController extends Controller
         return redirect('login')->withFlashMessage('User Successfully Created!visa');
 
         }
-    }
-    else{
+        
+        else{
         // Find the role using the role name
         $usersRole = Sentinel::findRoleByName('Admins');
 
