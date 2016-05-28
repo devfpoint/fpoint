@@ -23,8 +23,6 @@
                 <td><a href="profiles/{{ $user->id }}">{{ $user->email }}</a> <br>
                 @if ($user->inRole($admin))
                 <span class="label label-success">{{ 'Admin' }}</span>
-                @elseif ($user->inRole($coach))
-                <span class="label label-success">{{ 'Coach' }}</span>
                 @endif
                 </td>
                 <td>{{ $user->first_name}}</td>
