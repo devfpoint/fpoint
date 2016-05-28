@@ -76,7 +76,7 @@ class RegistrationController extends Controller
         // Assign the role to the users
         $usersRole->users()->attach($user);
 
-        return redirect('login')->withFlashMessage('User Successfully Created!master');
+        return redirect('login')->withFlashMessage('Coach Successfully Created!master');
         }
     }
 }
