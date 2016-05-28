@@ -40,7 +40,7 @@ class RegistrationController extends Controller
     public function store(RegistrationFormRequest $request)
     {
         $input = $request->only('email', 'password', 'first_name', 'last_name');
-          $roley = $request->input('first_name');
+          $roley = $request->input('role');
         $user = Sentinel::registerAndActivate($input);
 
         if ($roley == 'visa') {
@@ -53,6 +53,21 @@ class RegistrationController extends Controller
         $usersRole->users()->attach($user);
 
         return redirect('login')->withFlashMessage('User Successfully Created!visa');
+
+        }
+
+        elseif ($roley == 'mastercard') {
+
+
+        // Find the role using the role name
+        $usersRole = Sentinel::findRoleByName('Coaches');
+
+        // Assign the role to the users
+        $usersRole->coaches()->attach($user);
+
+        return redirect('login')->withFlashMessage('User Successfully Created!visa');
+
+        }
     }
     else{
         // Find the role using the role name
