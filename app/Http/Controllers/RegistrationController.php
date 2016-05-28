@@ -65,18 +65,18 @@ class RegistrationController extends Controller
         // Assign the role to the users
         $usersRole->coaches()->attach($user);
 
-        return redirect('login')->withFlashMessage('User Successfully Created!visa');
+        return redirect('login')->withFlashMessage('Coach Successfully Created!master');
 
         }
         
-        else{
+        else {
         // Find the role using the role name
         $usersRole = Sentinel::findRoleByName('Admins');
 
         // Assign the role to the users
         $usersRole->users()->attach($user);
 
-        return redirect('login')->withFlashMessage('Coach Successfully Created!master');
-        }
+        return redirect('login')->withFlashMessage('Admin Successfully Created!');
+        } 
     }
 }
