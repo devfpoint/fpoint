@@ -39,7 +39,7 @@ class RegistrationController extends Controller
      */
     public function store(RegistrationFormRequest $request)
     {
-        $input = $request->only('email', 'password', 'first_name', 'last_name');
+        $input = $request->only('email', 'password', 'first_name', 'last_name', 'role');
           $roley = $request->input('role');
         $user = Sentinel::registerAndActivate($input);
 
