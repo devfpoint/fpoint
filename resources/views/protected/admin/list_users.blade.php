@@ -21,7 +21,7 @@
             @foreach ($users as $user)
             <tr>
                 <td>{{ $user->id }}</td>
-                <td>{{ $user->$user_role }}</td>
+                <td>{{ $user->inRole }}</td>
                 <td><a href="profiles/{{ $user->id }}">{{ $user->email }}</a> <br>
                 @if ($user->inRole($admin))
                 <span class="label label-success">{{ 'Admin' }}</span>
