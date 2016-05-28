@@ -54,9 +54,9 @@
 
                             <!-- Radio field -->
                            <div class="cc-selector">
-                           <input id="visa" type="radio" name="role_client" value="visa" />
+                           <input id="visa" type="radio" name="role" value="visa" />
                            <label class="drinkcard-cc visa" for="visa"></label> 
-                           <input id="mastercard" type="radio" name="role_coach" value="mastercard" />
+                           <input id="mastercard" type="radio" name="role" value="mastercard" />
                            <label class="drinkcard-cc mastercard"for="mastercard"></label> 
                             </div>
    
