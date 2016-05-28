@@ -57,7 +57,7 @@ class RegistrationController extends Controller
 
         }
 
-        elseif ($role_coach == 'mastercard') {
+        else ($role_coach == 'mastercard') {
 
 
         // Find the role using the role name
