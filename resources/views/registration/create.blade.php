@@ -40,11 +40,11 @@
 
                             </div>
 
-                            <!-- First name field
+                            <!-- First name field -- >
                             <div class="form-group">
                                 {!! Form::text('first_name', null, ['placeholder' => 'First Name', 'class' => 'form-control', 'required' => 'required'])!!}
                                 {!! errors_for('first_name', $errors) !!}
-                            </div> -->
+                            </div> 
 
                             <!-- Last name field -->
                             <div class="form-group">
